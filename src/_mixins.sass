@@ -1,3 +1,5 @@
+@mixin f
+    display: flex
 @mixin fc
     display: flex
     flex-direction: column
@@ -5,3 +7,31 @@
 @mixin fr
     display: flex
     flex-direction: row
+
+@mixin lowest
+    @media (min-width: 200px) and (max-width: 319px)
+        @content
+@mixin mobile
+    @media (min-width: 320px) and (max-width: 767px)
+        @content
+@mixin tablet
+    @media (min-width: 768px) and (max-width: 1023px)
+        @content
+@mixin notebook
+    @media (min-width: 1024px) and (max-width: 1366px)
+        @content
+
+@mixin media($keys...)
+    @each $key in $keys
+        @if ($key == lowest) 
+            @include lowest
+                @content
+        @if ($key == mobile) 
+            @include mobile
+                @content
+        @if ($key == tablet) 
+            @include tablet
+                @content
+        @if ($key == notebook) 
+            @include notebook
+                @content

@@ -2,6 +2,9 @@ $percents: 1, 2, 3, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90
 $percsym: '%'
 
 @each $percent in $percents
+    .p-#{$percent}
+        padding: #{$percent}#{$percsym}
+@each $percent in $percents
     .pt-#{$percent}
         padding-top: #{$percent}#{$percsym}
 @each $percent in $percents

@@ -1,111 +1,15 @@
-.fc10
+$percents: 10, 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80, 90, 100
+$percsym: '%'
+
+.fc
     @include fc
-    width: 10%
-
-.fc20
-    @include fc
-    width: 20%
-
-.fc25
-    @include fc
-    width: 25%
-
-.fc30
-    @include fc
-    width: 30%
-
-.fc33
-    @include fc
-    width: 33%
-
-.fc40
-    @include fc
-    width: 40%
-
-.fc50
-    @include fc
-    width: 50%
-
-.fc60
-    @include fc
-    width: 60%
-
-.fc66
-    @include fc
-    width: 66%
-
-.fc70
-    @include fc
-    width: 70%
-
-.fc75
-    @include fc
-    width: 75%
-
-.fc80
-    @include fc
-    width: 80%
-
-.fc90
-    @include fc
-    width: 90%
-
-.fc100
-    @include fc
-    width: 100%
-
-.fr10
+@each $percent in $percents
+    .fc-#{$percent}
+        @include fc
+        width: #{$percent}#{$percsym}
+.fr
     @include fr
-    width: 10%
-
-.fr20
-    @include fr
-    width: 20%
-
-.fr25
-    @include fr
-    width: 25%
-
-.fr30
-    @include fr
-    width: 30%
-
-.fr33
-    @include fr
-    width: 33%
-
-.fr40
-    @include fr
-    width: 40%
-
-.fr50
-    @include fr
-    width: 50%
-
-.fr60
-    @include fr
-    width: 60%
-
-.fr66
-    @include fr
-    width: 66%
-
-.fr70
-    @include fr
-    width: 70%
-
-.fr75
-    @include fr
-    width: 75%
-
-.fr80
-    @include fr
-    width: 80%
-
-.fr90
-    @include fr
-    width: 90%
-
-.fr100
-    @include fr
-    width: 100%
+@each $percent in $percents
+    .fr-#{$percent}
+        @include fr
+        width: #{$percent}#{$percsym}

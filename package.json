@@ -2,6 +2,8 @@
   "name": "bonzocss",
   "version": "0.0.1",
   "description": "BonzoCSS is a small CSS framework with responsive layouts, styled components and UI kit",
+  "author": "Max Bokhan <bokhanworks@gmail.com",
+  "license": "MIT",
   "main": "src/bonzocss.sass",
   "repository": {
     "type": "git",
@@ -11,8 +13,8 @@
     "watch": "sass --watch src/bonzocss.sass docs/bonzocss.min.css --style compressed",
     "compile": "sass src/bonzocss.sass dist/bonzocss.css",
     "prefix": "postcss dist/bonzocss.css --use autoprefixer -o dist/bonzocss.css",
-    "compilemin": "sass dist/bonzocss.css dist/bonzocss.min.css --style compressed",
-    "build": "npm-run-all compile prefix compilemin"
+    "minify": "sass dist/bonzocss.css dist/bonzocss.min.css --style compressed",
+    "build": "npm-run-all compile prefix minify"
   },
   "keywords": [
     "css",
@@ -22,17 +24,13 @@
     "flexbox"
   ],
   "browserslist": "last 6 versions",
-  "author": "Max Bokhan",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/BokhanMax/BonzoCSS/issues"
   },
-  "dependencies": {
-    "minireset.css": "^0.0.7",
-    "sass": "^1.66.1"
-  },
   "homepage": "https://getbonzo.org",
   "devDependencies": {
+    "minireset.css": "^0.0.7",
+    "sass": "^1.66.1",
     "autoprefixer": "^10.4.15",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^10.1.0"

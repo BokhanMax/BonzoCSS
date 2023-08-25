@@ -1,0 +1,30 @@
+{
+  "name": "bonzocss",
+  "version": "0.0.1",
+  "description": "BonzoCSS is a small CSS framework with responsive layouts, styled components and UI kit",
+  "main": "src/bonzocss.sass",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BokhanMax/BonzoCSS.git"
+  },
+  "scripts": {
+    "watch": "sass --watch src/bonzocss.sass dist/bonzocss.min.css --style compressed"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "css-framework",
+    "html",
+    "flexbox"
+  ],
+  "author": "Max Bokhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BokhanMax/BonzoCSS/issues"
+  },
+  "dependencies": {
+    "minireset.css": "^0.0.7",
+    "sass": "^1.66.1"
+  },
+  "homepage": "https://getbonzo.org"
+}

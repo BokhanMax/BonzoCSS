@@ -8,7 +8,8 @@
     "url": "git+https://github.com/BokhanMax/BonzoCSS.git"
   },
   "scripts": {
-    "watch": "sass --watch src/bonzocss.sass dist/bonzocss.min.css --style compressed"
+    "watch": "sass --watch src/bonzocss.sass docs/bonzocss.min.css --style compressed",
+    "build": "sass src/bonzocss.sass dist/bonzocss.css"
   },
   "keywords": [
     "css",

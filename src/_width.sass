@@ -1,4 +1,5 @@
 $percents: 10, 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80, 90, 100
+$gaps: 1, 2, 3, 5, 10, 15, 20, 25
 $percsym: '%'
 
 .fc
@@ -13,3 +14,6 @@ $percsym: '%'
     .fr-#{$percent}
         @include fr
         width: #{$percent}#{$percsym}
+@each $gap in $gaps
+    .g-#{$gap}
+        gap: #{$gap}#{$percsym}

@@ -5,8 +5,16 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./bonzocss.min.css")
         title Bonzo | Tiny CSS Framework
-    body 
-        header
+    body.ml-2.mr-2.mt-1
+        header.fr-100.jcc
+            .logo.fr-50.jlc
+                p.bold.xl BONZO CSS
+            nav.fr-50
+                ul.fr-100.g-5.jrc
+                    li.ltno.m-3: a.nodec(href="#!") Home 
+                    li.ltno.m-3: a.nodec(href="/guide") Get Started
+                    li.ltno.m-3: a.nodec(href="/about") About Me
+        hr
         main.fc.jcc.m-1
             .fr-100
                 .fr-20.jlc
@@ -16,7 +24,7 @@ html(lang="en")
                 .fr-30.jrc
                     p Flex row width 30%
             .fc-80.jcc.mt-2
-                h1 This is H1 Header
+                h1.mb-3 This is H1 Header
                 p
-                    a.btnmain(href="#") Button
+                    a.btnlrg(href="#") Button
         footer

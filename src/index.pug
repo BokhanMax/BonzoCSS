@@ -5,24 +5,26 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./bonzocss.min.css")
         title Bonzo | Tiny CSS Framework
+        style. 
+            nav > ul > li > a {color: #262626;}
     body.ml-2.mr-2.mt-1
         header.fr-100.jcc
             .logo.fr-50.jlc
-                p.bold.xl BONZO CSS
+                h1.xxl BONZO CSS
             nav.fr-50
                 ul.fr-100.g-5.jrc
-                    li.ltno.m-3: a.nodec(href="#!") Home 
-                    li.ltno.m-3: a.nodec(href="/guide") Get Started
-                    li.ltno.m-3: a.nodec(href="/about") About Me
-        hr
+                    li.ltno.mr-3: a.nodec(href="#!") Home
+                    li.ltno.mr-3: a.nodec(href="/guide") Get Started
+                    li.ltno: a.nodec(href="/about") About Me
+        hr.mt-1
         main.fc.jcc.m-1
             .fr-100
-                .fr-20.jlc
-                    p Flex row width 20%
-                .fr-50.jcc
-                    p Flex row width 50%
-                .fr-30.jrc
-                    p Flex row width 30%
+                .fr-33.jlc
+                    p Flex row width 33%
+                .fr-33.jcc
+                    p Flex row width 33%
+                .fr-33.jrc
+                    p Flex row width 33%
             .fc-80.jcc.mt-2
                 h1.mb-3 This is H1 Header
                 p

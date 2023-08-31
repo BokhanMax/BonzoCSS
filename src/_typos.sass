@@ -1,24 +1,53 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@300;400;700&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap)
 @import url(https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap)
 
 $inter: 'Inter', sans-serif
-$raleway: 'Raleway', sans-serif
 $fjalla: 'Fjalla One', sans-serif
 
 body
     font-family: $inter
+    font-size: 1em
+    @include media(mobile)
+        font-size: .9em
+
+.inter
+    font-family: $inter
+
+.fjalla
+    font-family: $fjalla
+
 h1
     font-family: $fjalla
     font-size: 2em
     line-height: 2em
     text-transform: uppercase
     font-weight: bold
+
 .bold
     font-weight: bold
+
+.l
+    font-size: 1.5em
+
 .xl
     font-size: 2em
+
 .xxl
     font-size: 2.5em
 
+.s
+    font-size: .9em
+
+.xs
+    font-size: .7em
+
+.xxs
+    font-size: .5em
+
 .nodec
     text-decoration: none
+
+.em
+    font-weight: bold
+.i
+    font-style: italic

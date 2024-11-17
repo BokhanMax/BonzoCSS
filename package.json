@@ -10,7 +10,7 @@
     "url": "git+https://github.com/BokhanMax/BonzoCSS.git"
   },
   "scripts": {
-    "watch": "sass --watch src/bonzocss.sass docs/bonzocss.min.css --style compressed",
+    "watch": "sass --watch src/bonzocss.sass docs/css/bonzocss.min.css --style compressed",
     "pug": "pug docs/src/pages -o ./docs -P",
     "docscss": "sass src/bonzocss.sass docs/css/bonzocss.min.css --style compressed",
     "compile": "sass src/bonzocss.sass dist/bonzocss.css",

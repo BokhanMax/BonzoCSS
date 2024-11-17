@@ -18,18 +18,24 @@
 @mixin notebook
     @media (min-width: 1024px) and (max-width: 1366px)
         @content
+@mixin fullwidth
+    @media (min-width: 1367px)
+        @content
 
 @mixin media($keys...)
     @each $key in $keys
-        @if ($key == lowest) 
+        @if ($key == lowest)
             @include lowest
                 @content
-        @if ($key == mobile) 
+        @if ($key == mobile)
             @include mobile
                 @content
-        @if ($key == tablet) 
+        @if ($key == tablet)
             @include tablet
                 @content
-        @if ($key == notebook) 
+        @if ($key == notebook)
             @include notebook
+                @content
+        @if ($key == fullwidth)
+            @include fullwidth
                 @content

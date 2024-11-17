@@ -1,3 +1,4 @@
+@use 'colors'
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap)
 @import url(https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap)
 
@@ -7,15 +8,21 @@ $fjalla: 'Fjalla One', sans-serif
 body
     font-family: $inter
     font-size: 1em
-    @include media(mobile)
-        font-size: .9em
 
 .inter
     font-family: $inter
 
 .fjalla
     font-family: $fjalla
-
+a
+    text-decoration: none
+    outline: none
+a:link
+    color: colors.$primarycolor
+a:visited
+    color: colors.$primarycolor
+.ltno
+    list-style-type: none
 h1
     font-family: $fjalla
     font-size: 2em

@@ -4,3 +4,4 @@ node_modules
 composer
 vendor
 package-lock.json
+.osp/project.ini

@@ -8,7 +8,7 @@
 
 1. LTR-RTL support
 2. dynamic margins and paddings
-3. prepared UI kit and colorsets
+3. light animation sets for lightweight on-page effects
 
 Written with SASS, best CSS preprocessor ever.
 

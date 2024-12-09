@@ -1,17 +1,17 @@
 # Bonzo CSS
 
-## Small responsive CSS framework for easyway web development
+## Tiny CSS helper for easy web development
 
 > Bonzo is a nickname of John Bonham, the drummer of rock'n'roll legends Led Zeppelin
+
+---
 
 **Bonzo CSS** comes with:
 
 1. LTR-RTL support
-2. dynamic margins and paddings
-3. light animation sets for lightweight on-page effects
+2. dynamic margins, paddings and so on
+3. light NO-JS animations for lightweight on-page effects
 
-Written with SASS, best CSS preprocessor ever.
-
-No JS! CSS animation only.
+Writing using @sass, best CSS preprocessor ever.
 
 For a questions and proposals please mail me at <bokhanworks@gmail.com>

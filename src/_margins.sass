@@ -7,6 +7,12 @@ $percsym: '%'
     .m-#{$percent}
         margin: #{$percent}#{$percsym}
 @each $percent in $percents
+    .mx-#{$percent}
+        margin: 0 #{$percent}#{$percsym}
+@each $percent in $percents
+    .my-#{$percent}
+        margin: #{$percent}#{$percsym} 0
+@each $percent in $percents
     .mt-#{$percent}
         margin-top: #{$percent}#{$percsym}
 @each $percent in $percents

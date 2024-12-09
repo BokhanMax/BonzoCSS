@@ -5,6 +5,14 @@ $percsym: '%'
     .p-#{$percent}
         padding: #{$percent}#{$percsym}
 @each $percent in $percents
+    .px-#{$percent}
+        padding-left: #{$percent}#{$percsym}
+        padding-right: #{$percent}#{$percsym}
+@each $percent in $percents
+    .py-#{$percent}
+        padding-top: #{$percent}#{$percsym}
+        padding-bottom: #{$percent}#{$percsym}
+@each $percent in $percents
     .pt-#{$percent}
         padding-top: #{$percent}#{$percsym}
 @each $percent in $percents

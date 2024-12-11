@@ -5,28 +5,44 @@
         gap: #{$i}#{vars.$percsym}
     .g-em-#{$i}
         gap: #{$i}#{vars.$emsym}
+    .order-#{$i}
+        flex-order: #{$i}
+@for $i from vars.$start + 1 through vars.$deci
     .f-grow-#{$i}
         flex-grow: #{$i}
     .f-shrink-#{$i}
         flex-shrink: #{$i}
-    .f-order-#{$i}
-        flex-order: #{$i}
+
+.order-last
+    order: 999
+.order-first
+    order: -999
+.order-0
+    order: 0
 
 .flex
     display: flex
+.f-basic
+    flex-basis: auto
+.f-basic-0
+    flex-basis: 0
 .f-row
     flex-direction: row
-.f-rowrev
+.f-row-rev
     flex-direction: row-reverse
 .f-col
     flex-direction: column
-.f-colrev
+.f-col-rev
     flex-direction: column-reverse
+.f-grow-0
+    flex-grow: 0
+.f-shrink-0
+    flex-shrink: 0
 .f-nowrap
     flex-wrap: nowrap
 .f-wrap
     flex-wrap: wrap
-.f-wraprev
+.f-wrap-rev
     flex-wrap: wrap-reverse
 .f-jc-start
     justify-content: start

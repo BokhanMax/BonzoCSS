@@ -1,26 +1,35 @@
-$percents: 0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 15, 20, 25, 30, 33, 40, 50, 60, 70, 75, 80, 90
-$percsym: '%'
+@use '_vars'
 
-.m-auto
-    margin: 0 auto
-@each $percent in $percents
-    .m-#{$percent}
-        margin: #{$percent}#{$percsym}
-@each $percent in $percents
-    .mx-#{$percent}
-        margin: 0 #{$percent}#{$percsym}
-@each $percent in $percents
-    .my-#{$percent}
-        margin: #{$percent}#{$percsym} 0
-@each $percent in $percents
-    .mt-#{$percent}
-        margin-top: #{$percent}#{$percsym}
-@each $percent in $percents
-    .mr-#{$percent}
-        margin-right: #{$percent}#{$percsym}
-@each $percent in $percents
-    .mb-#{$percent}
-        margin-bottom: #{$percent}#{$percsym}
-@each $percent in $percents
-    .ml-#{$percent}
-        margin-left: #{$percent}#{$percsym}
+@for $i from vars.$start + 1 through vars.$end
+    .m-#{$i}
+        margin: #{$i}#{vars.$percsym}
+    .mx-#{$i}
+        margin-left: #{$i}#{vars.$percsym}
+        margin-right: #{$i}#{vars.$percsym}
+    .my-#{$i}
+        margin-top: #{$i}#{vars.$percsym}
+        margin-bottom: #{$i}#{vars.$percsym}
+    .mt-#{$i}
+        margin-top: #{$i}#{vars.$percsym}
+    .mr-#{$i}
+        margin-right: #{$i}#{vars.$percsym}
+    .mb-#{$i}
+        margin-bottom: #{$i}#{vars.$percsym}
+    .ml-#{$i}
+        margin-left: #{$i}#{vars.$percsym}
+    .m-em-#{$i}
+        margin: #{$i}#{vars.$emsym}
+    .mx-em-#{$i}
+        margin-left: #{$i}#{vars.$emsym}
+        margin-right: #{$i}#{vars.$emsym}
+    .my-em-#{$i}
+        margin-top: #{$i}#{vars.$emsym}
+        margin-bottom: #{$i}#{vars.$emsym}
+    .mt-em-#{$i}
+        margin-top: #{$i}#{vars.$emsym}
+    .mr-em-#{$i}
+        margin-right: #{$i}#{vars.$emsym}
+    .mb-em-#{$i}
+        margin-bottom: #{$i}#{vars.$emsym}
+    .ml-em-#{$i}
+        margin-left: #{$i}#{vars.$emsym}

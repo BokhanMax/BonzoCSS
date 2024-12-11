@@ -1,0 +1,7 @@
+@use '_vars'
+
+@for $i from vars.$start + 1 through vars.$end
+    .h-#{$i}
+        width: #{$i}#{vars.$percsym}
+    .h-em-#{$i}
+        width: #{$i}#{vars.$emsym}

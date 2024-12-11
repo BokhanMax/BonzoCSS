@@ -1,21 +1,15 @@
-$percents: 10, 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80, 90, 100
-$widths: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25
-$rads: 1, 2, 3, 5, 6, 7, 8, 9, 10, 20, 25, 30, 33, 40, 45, 50, 60, 66, 70, 75, 80, 90, 100
-$emsym: 'em'
-$pxsym: 'px'
+@use '_vars'
 
-@each $width in $widths
-    .border-solid-#{$width}
-        border: #{$width}#{$pxsym} solid
-@each $width in $widths
-    .border-dashed-#{$width}
-        border: #{$width}#{$pxsym} dashed
-@each $width in $widths
-    .border-dotted-#{$width}
-        border: #{$width}#{$pxsym} dotted
-@each $width in $widths
-    .border-double-#{$width}
-        border: #{$width}#{$pxsym} double
-@each $rad in $rads
-    .radius-#{$rad}
-        border-radius: #{$rad}#{$pxsym}
+.border-0
+    border: none
+@for $i from vars.$start + 1 through vars.$end
+    .border-solid-#{$i}
+        border: #{$i}#{vars.$pxsym} solid
+    .border-dashed-#{$i}
+        border: #{$i}#{vars.$pxsym} dashed
+    .border-dotted-#{$i}
+        border: #{$i}#{vars.$pxsym} dotted
+    .border-double-#{$i}
+        border: #{$i}#{vars.$pxsym} double
+    .radius-#{$i}
+        border-radius: #{$i}#{vars.$pxsym}

@@ -1,26 +1,35 @@
-$percents: 0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80, 90
-$percsym: '%'
+@use '_vars'
 
-@each $percent in $percents
-    .p-#{$percent}
-        padding: #{$percent}#{$percsym}
-@each $percent in $percents
-    .px-#{$percent}
-        padding-left: #{$percent}#{$percsym}
-        padding-right: #{$percent}#{$percsym}
-@each $percent in $percents
-    .py-#{$percent}
-        padding-top: #{$percent}#{$percsym}
-        padding-bottom: #{$percent}#{$percsym}
-@each $percent in $percents
-    .pt-#{$percent}
-        padding-top: #{$percent}#{$percsym}
-@each $percent in $percents
-    .pr-#{$percent}
-        padding-right: #{$percent}#{$percsym}
-@each $percent in $percents
-    .pb-#{$percent}
-        padding-bottom: #{$percent}#{$percsym}
-@each $percent in $percents
-    .pl-#{$percent}
-        padding-left: #{$percent}#{$percsym}
+@for $i from vars.$start + 1 through vars.$end
+    .p-#{$i}
+        padding: #{$i}#{vars.$percsym}
+    .px-#{$i}
+        padding-left: #{$i}#{vars.$percsym}
+        padding-right: #{$i}#{vars.$percsym}
+    .py-#{$i}
+        padding-top: #{$i}#{vars.$percsym}
+        padding-bottom: #{$i}#{vars.$percsym}
+    .pt-#{$i}
+        padding-top: #{$i}#{vars.$percsym}
+    .pr-#{$i}
+        padding-right: #{$i}#{vars.$percsym}
+    .pb-#{$i}
+        padding-bottom: #{$i}#{vars.$percsym}
+    .pl-#{$i}
+        padding-left: #{$i}#{vars.$percsym}
+    .p-em-#{$i}
+        padding: #{$i}#{vars.$emsym}
+    .px-em-#{$i}
+        padding-left: #{$i}#{vars.$emsym}
+        padding-right: #{$i}#{vars.$emsym}
+    .py-em-#{$i}
+        padding-top: #{$i}#{vars.$emsym}
+        padding-bottom: #{$i}#{vars.$emsym}
+    .pt-em-#{$i}
+        padding-top: #{$i}#{vars.$emsym}
+    .pr-em-#{$i}
+        padding-right: #{$i}#{vars.$emsym}
+    .pb-em-#{$i}
+        padding-bottom: #{$i}#{vars.$emsym}
+    .pl-em-#{$i}
+        padding-left: #{$i}#{vars.$emsym}

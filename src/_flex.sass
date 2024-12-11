@@ -1,3 +1,17 @@
+@use '_vars'
+
+@for $i from vars.$start + 1 through vars.$end
+    .g-#{$i}
+        gap: #{$i}#{vars.$percsym}
+    .g-em-#{$i}
+        gap: #{$i}#{vars.$emsym}
+    .f-grow-#{$i}
+        flex-grow: #{$i}
+    .f-shrink-#{$i}
+        flex-shrink: #{$i}
+    .f-order-#{$i}
+        flex-order: #{$i}
+
 .flex
     display: flex
 .f-row
@@ -8,26 +22,6 @@
     flex-direction: column
 .f-colrev
     flex-direction: column-reverse
-.f-grow-1
-    flex-grow: 1
-.f-grow-2
-    flex-grow: 2
-.f-grow-3
-    flex-grow: 3
-.f-grow-4
-    flex-grow: 4
-.f-grow-5
-    flex-grow: 5
-.f-shrink-0
-    flex-shrink: 0
-.f-shrink-1
-    flex-shrink: 1
-.f-shrink-2
-    flex-shrink: 2
-.f-shrink-3
-    flex-shrink: 3
-.f-shrink-4
-    flex-shrink: 4
 .f-nowrap
     flex-wrap: nowrap
 .f-wrap

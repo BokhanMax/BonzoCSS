@@ -1,6 +1,6 @@
 {
   "name": "bonzocss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tiny utility-first CSS helper",
   "author": "Max Bokhan <bokhanworks@gmail.com> (https://neuroweb.pp.ua)",
   "license": "MIT",

@@ -1,6 +1,7 @@
 # Bonzo CSS
 
-## Tiny CSS helper for easy web development
+Tiny CSS helper for easy web development
+In development now
 
 > Bonzo is a nickname of John Bonham, the drummer of rock'n'roll legends Led Zeppelin
 
@@ -12,6 +13,24 @@
 2. dynamic margins, paddings and so on
 3. light NO-JS animations for lightweight on-page effects
 
-Writing using @sass, best CSS preprocessor ever.
+## How to use Bonzo
 
-For a questions and proposals please mail me at <bokhanworks@gmail.com>
+Install with NPM
+
+```sh
+npm install bonzocss
+```
+
+Import CSS file into your main CSS
+
+```sh
+@import 'bonzocss/dist/bonzocss.min.css'
+```
+
+## Documentation
+
+See documentation at <https://getbonzo.org> (will work soon)
+
+---
+
+For questions and proposals please contact me at <bokhanworks@gmail.com>

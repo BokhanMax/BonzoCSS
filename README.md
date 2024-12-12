@@ -1,7 +1,6 @@
 # Bonzo CSS
 
 Tiny CSS helper for easy web development
-In development now
 
 > Bonzo is a nickname of John Bonham, the drummer of rock'n'roll legends Led Zeppelin
 
@@ -15,16 +14,22 @@ In development now
 
 ## How to use Bonzo
 
-Install with NPM
+Install win NPM
 
 ```sh
-npm install bonzocss
+npm install https://github.com/BokhanMax/BonzoCSS.git
 ```
 
 Import CSS file into your main CSS
 
 ```sh
-@import 'bonzocss/dist/bonzocss.min.css'
+@import '@tuo_max/bonzocss/dist/bonzocss.min.css'
+```
+
+...or into your HTML
+
+```sh
+<link rel="stylesheet" href="node_modules/@tuo_max/bonzocss/dist/bonzocss.min.css">
 ```
 
 For questions and proposals please contact me at <bokhanworks@gmail.com>

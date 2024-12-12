@@ -27,10 +27,4 @@ Import CSS file into your main CSS
 @import 'bonzocss/dist/bonzocss.min.css'
 ```
 
-## Documentation
-
-See documentation at <https://getbonzo.org> (will work soon)
-
----
-
 For questions and proposals please contact me at <bokhanworks@gmail.com>

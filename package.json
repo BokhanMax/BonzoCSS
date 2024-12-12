@@ -1,13 +1,10 @@
 {
-  "name": "bonzocss",
-  "version": "0.1.1",
+  "name": "@tuo_max/bonzocss",
+  "version": "1.0.0",
   "description": "A tiny utility-first CSS helper",
-  "author": "Max Bokhan <bokhanworks@gmail.com> (https://neuroweb.pp.ua)",
-  "license": "MIT",
   "main": "src/bonzocss.sass",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BokhanMax/BonzoCSS.git"
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
     "watch": "sass --watch src/bonzocss.sass docs/css/bonzocss.min.css --style compressed",
@@ -19,16 +16,21 @@
     "docs": "npm-run-all pug docscss",
     "build": "npm-run-all compile prefix minify"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BokhanMax/BonzoCSS.git"
+  },
   "keywords": [
     "css",
     "sass",
     "css-framework"
   ],
-  "browserslist": "last 6 versions",
+  "author": "Max Bokhan <bokhanworks@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/BokhanMax/BonzoCSS/issues"
   },
-  "homepage": "https://getbonzo.org",
+  "homepage": "https://github.com/BokhanMax/BonzoCSS#readme",
   "devDependencies": {
     "autoprefixer": "*",
     "minireset.css": "*",

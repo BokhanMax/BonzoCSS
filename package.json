@@ -20,9 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/BokhanMax/BonzoCSS.git"
   },
-  "publishConfig": {
-  "registry": "https://npm.pkg.github.com"
-  },
   "keywords": [
     "css",
     "sass",

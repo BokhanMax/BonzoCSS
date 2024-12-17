@@ -14,13 +14,13 @@ Tiny CSS helper for easy web development
 
 ## How to use Bonzo
 
-Install win NPM
+Install with NPM
 
 ```sh
 npm i @tuo_max/bonzocss
 ```
 
-Import CSS file into your main CSS
+Then import CSS file into your main CSS
 
 ```sh
 @import '@tuo_max/bonzocss/dist/bonzocss.min.css'

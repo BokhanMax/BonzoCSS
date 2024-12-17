@@ -20,6 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/BokhanMax/BonzoCSS.git"
   },
+  "publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "css",
     "sass",
@@ -32,10 +35,12 @@
   },
   "homepage": "https://github.com/BokhanMax/BonzoCSS#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
     "autoprefixer": "*",
     "minireset.css": "*",
     "npm-run-all": "*",
-    "postcss-cli": "*",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
     "pug": "*",
     "pug-cli": "*",
     "sass": "*"

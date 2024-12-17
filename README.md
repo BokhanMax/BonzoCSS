@@ -17,7 +17,7 @@ Tiny CSS helper for easy web development
 Install win NPM
 
 ```sh
-npm install https://github.com/BokhanMax/BonzoCSS.git
+npm i @tuo_max/bonzocss
 ```
 
 Import CSS file into your main CSS

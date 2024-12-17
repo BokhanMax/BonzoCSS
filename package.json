@@ -1,6 +1,6 @@
 {
   "name": "@tuo_max/bonzocss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny utility-first CSS helper",
   "main": "src/bonzocss.sass",
   "directories": {

@@ -1,0 +1,48 @@
+$black: ("black": #000000, "black-10": #CCCCCC, "black-20": #AAAAAA, "black-30": #808080, "black-40": #555555, "black-50": #2B2B2B, "black-60": #000000, "black-70": #000000, "black-80": #000000, "black-90": #000000, "black-95": #000000)
+$charcoal: ("charcoal": #36454F, "charcoal-10": #D7DADC, "charcoal-20": #BCC1C4, "charcoal-30": #9AA2A7, "charcoal-40": #79838A, "charcoal-50": #58646C, "charcoal-60": #36454F, "charcoal-70": #2D3A42, "charcoal-80": #242E35, "charcoal-90": #1B2328, "charcoal-95": #12171A)
+$jetblack: ("jetblack": #343434, "jetblack-10": #D6D6D6, "jetblack-20": #BBBBBB, "jetblack-30": #999999, "jetblack-40": #787878, "jetblack-50": #565656, "jetblack-60": #2B2B2B, "jetblack-70": #232323, "jetblack-80": #1A1A1A, "jetblack-90": #111111, "jetblack-95": #0A0A0A)
+$licorice: ("licorice": #1B1212, "licorice-10": #D1D0D0, "licorice-20": #B3B0B0, "licorice-30": #8D8888, "licorice-40": #676161, "licorice-50": #413A3A, "licorice-60": #170F0F, "licorice-70": #120C0C, "licorice-80": #0E0909, "licorice-90": #090606, "licorice-95": #050404)
+$matteblack: ("matteblack": #28282B, "matteblack-10": #D4D4D5, "matteblack-20": #B7B7B8, "matteblack-30": #939395, "matteblack-40": #707072, "matteblack-50": #4C4C4E, "matteblack-60": #212124, "matteblack-70": #1B1B1D, "matteblack-80": #141416, "matteblack-90": #0D0D0E, "matteblack-95": #080809)
+$onyx: ("onyx": #353935, "onyx-10": #D7D7D7, "onyx-20": #BCBDBC, "onyx-30": #9A9C9A, "onyx-40": #787B78, "onyx-50": #575A57, "onyx-60": #2C302C, "onyx-70": #232623, "onyx-80": #1B1D1B, "onyx-90": #121312, "onyx-95": #0B0B0B)
+
+@each $name, $shade in $black
+    .color-#{$name}
+        color: $shade
+
+    .bg-#{$name}
+        background-color: $shade
+
+@each $name, $shade in $charcoal
+    .color-#{$name}
+        color: $shade
+
+    .bg-#{$name}
+        background-color: $shade
+
+@each $name, $shade in $jetblack
+    .color-#{$name}
+        color: $shade
+
+    .bg-#{$name}
+        background-color: $shade
+
+@each $name, $shade in $licorice
+    .color-#{$name}
+        color: $shade
+
+    .bg-#{$name}
+        background-color: $shade
+
+@each $name, $shade in $matteblack
+    .color-#{$name}
+        color: $shade
+
+    .bg-#{$name}
+        background-color: $shade
+
+@each $name, $shade in $onyx
+    .color-#{$name}
+        color: $shade
+
+    .bg-#{$name}
+        background-color: $shade

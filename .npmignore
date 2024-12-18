@@ -1,4 +1,5 @@
 /.osp
 /.git
+/docs
 /node_modules
 .gitignore

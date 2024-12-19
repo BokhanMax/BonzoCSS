@@ -1,9 +1,9 @@
 # Bonzo CSS
 
 > [!WARNING]
-> BonzoCSS is in development now. Documentation with full list of classes will be avaible soon
+> BonzoCSS is in development now. Documentation with full list of classes will be available soon
 
-<br><br><br>
+<br><br>
 
 A tiny utility-first CSS helper
 

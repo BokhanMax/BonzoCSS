@@ -1,0 +1,127 @@
+@use '_vars'
+
+@import url(https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Golos+Text:wght@400..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap)
+
+@each $weight in vars.$fontweight
+    .roboto-#{$weight}
+        font-family: 'Roboto', serif
+        font-weight: $weight
+        font-style: normal
+@each $weight in vars.$fontweight
+    .roboto-italic-#{$weight}
+        font-family: 'Roboto', serif
+        font-weight: $weight
+        font-style: italic
+@each $weight in vars.$fontweight
+    .opensans-#{$weight}
+        font-family: 'Open Sans', serif
+        font-weight: $weight
+        font-style: normal
+        font-optical-sizing: auto
+@each $weight in vars.$fontweight
+    .golostext-#{$weight}
+        font-family: 'Golos Text', serif
+        font-weight: $weight
+        font-style: normal
+        font-optical-sizing: auto
+@each $weight in vars.$fontweight
+    .montserrat-#{$weight}
+        font-family: 'Montserrat', serif
+        font-weight: $weight
+        font-style: normal
+        font-optical-sizing: auto
+@each $weight in vars.$fontweight
+    .merriweather-#{$weight}
+        font-family: 'Merriweather', serif
+        font-weight: $weight
+        font-style: normal
+@each $weight in vars.$fontweight
+    .merriweather-italic-#{$weight}
+        font-family: 'Merriweather', serif
+        font-weight: $weight
+        font-style: italic
+@each $weight in vars.$fontweight
+    .cormorant-#{$weight}
+        font-family: 'Cormorant', serif
+        font-weight: $weight
+        font-style: normal
+@each $weight in vars.$fontweight
+    .cormorant-italic-#{$weight}
+        font-family: 'Cormorant', serif
+        font-weight: $weight
+        font-style: italic
+@each $weight in vars.$fontweight
+    .raleway-#{$weight}
+        font-family: 'Raleway', serif
+        font-weight: $weight
+        font-style: normal
+@each $weight in vars.$fontweight
+    .raleway-italic-#{$weight}
+        font-family: 'Raleway', serif
+        font-weight: $weight
+        font-style: italic
+@each $weight in vars.$fontweight
+    .ibm-#{$weight}
+        font-family: 'IBM Plex Sans', serif
+        font-weight: $weight
+        font-style: normal
+@each $weight in vars.$fontweight
+    .ibm-italic-#{$weight}
+        font-family: 'IBM Plex Sans', serif
+        font-weight: $weight
+        font-style: italic
+@each $weight in vars.$fontweight
+    .ubuntu-#{$weight}
+        font-family: 'Ubuntu', serif
+        font-weight: $weight
+        font-style: normal
+@each $weight in vars.$fontweight
+    .ubuntu-italic-#{$weight}
+        font-family: 'Ubuntu', serif
+        font-weight: $weight
+        font-style: italic
+.play-regular
+    font-family: 'Play', serif
+    font-weight: 400
+    font-style: normal
+.play-bold
+    font-family: 'Play', serif
+    font-weight: 700
+    font-style: normal
+
+
+.font-bold
+    font-weight: bold
+
+.font-italic
+    font-style: italic
+
+.font-l
+    font-size: 1.5em
+
+.font-xl
+    font-size: 2em
+
+.font-xxl
+    font-size: 2.5em
+
+.font-s
+    font-size: .9em
+
+.font-xs
+    font-size: .7em
+
+.font-xxs
+    font-size: .5em
+
+.font-nodec
+    text-decoration: none
+
+.font-upcase
+    text-transform: uppercase
+
+.font-lowcase
+    text-transform: lowercase
+
+.font-capit
+    text-transform: capitalize
